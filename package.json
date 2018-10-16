@@ -5,7 +5,8 @@
   "cordova": {
     "id": "cordova-plugin-detect-screenshot",
     "platforms": [
-      "ios"
+      "ios",
+      "android"
     ]
   },
   "repository": {
@@ -15,7 +16,9 @@
   "keywords": [
     "cordova",
     "ecosystem:cordova",
-    "cordova-ios"
+    "cordova-ios",
+    "privacy",
+    "cordova-android"
   ],
   "author": "Restocks",
   "license": "MIT"

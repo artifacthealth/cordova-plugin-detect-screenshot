@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin id="cordova-plugin-detect-screenshot" version="1.0.6" xmlns="http://apache.org/cordova/ns/plugins/1.0">
-  <name>cordova-plugin-detect-screenshot</name>    <!-- ios -->
+  <name>cordova-plugin-detect-screenshot</name>
+    <!-- android -->
+    <platform name="android">
+
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="PrivacyScreenPlugin">
+                <param name="android-package" value="org.devgeeks.privacyscreen.PrivacyScreenPlugin"/>
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/PrivacyScreenPlugin.java" target-dir="src/org/devgeeks/privacyscreen"/>
+    </platform>
+    <!-- ios -->
     <platform name="ios">
 
         <config-file target="config.xml" parent="/*">
